@@ -15,22 +15,24 @@ def countingSort(arr):
     return arr
 def countSortString(strr):
     countArray = [0] * 26
-    for chr in strr:
-        idx = ord(chr) - ord('a')
+    for char in strr:
+        idx = ord(char) - ord('a')
         countArray[idx] = countArray[idx]+1
     # print(countArray)
+    strr_list = list(strr)
     i = 0
     for count in range(len(countArray)):
         for idx in range(countArray[count]):
             c = chr(ord('a') + count)
-            strr[i] = c
-            i+=1            
-
+            strr_list[i] = c
+            i+=1    
+    print("".join(strr_list))
+    return "".join(strr_list) 
 arr=[8,5,2,9,6]
 strr='cba'
 if __name__ == "__main__":
     
     countingSort(arr)
     print(arr)
-    countSortString(strr)
-    print(strr)
+    x = countSortString(strr)
+    print(x)
