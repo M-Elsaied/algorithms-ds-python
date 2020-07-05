@@ -8,8 +8,12 @@ def bubbleSort(arr):
                 arr[i], arr[i+1] = arr[i+1], arr[i]
                 isSorted=False
         counter+=1 
+
 arr=[8,5,2,9,6]
 if __name__ == "__main__":
     
     bubbleSort(arr)
     print(arr)
+
+
+    
