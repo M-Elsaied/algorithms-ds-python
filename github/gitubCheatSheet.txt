@@ -1,0 +1,15 @@
+- git clone <repo.git> | to clone remote repo
+- ssh-keygen -t rsa | to create ssh key so you dont authenticate everytime
+- cat .ssh/id_rsa.pub | to get the key to put it in github
+- git checkout - b <branch_name> | to create a new branch and work in it
+- git info
+- git fetch | downloads new data from remote repo
+- git rebase origin | rebases the branch to the most up to date code
+- git status | to find the status of the current branch
+- git add . | to add modified files to remote
+- git config --global user.email "<email>"
+- git config --global user.name "<name>"
+- git commit -m "<message>" | to commit with a message
+- git remote -v | to make sure you're connected with remote repo
+- git push | to push changes
+- git push --set-upstream origin <branch_name> | to push if there was no upstream
